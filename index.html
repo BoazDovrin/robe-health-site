@@ -31,15 +31,28 @@
             text-decoration: underline;
         }
         main {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 80px auto 40px;
             padding: 20px;
             text-align: center;
         }
+        .header-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-text {
+            flex: 1;
+            padding: 20px;
+        }
+        .header-image {
+            flex: 1;
+            max-width: 500px;
+        }
         img {
             max-width: 100%;
             height: auto;
-            margin-bottom: 20px;
         }
         h1 {
             font-size: 26px;
@@ -50,7 +63,7 @@
             font-family: 'Georgia', serif;
             font-style: italic;
             font-size: 20px;
-            margin: 20px 0;
+            margin-top: 30px;
             color: #444;
         }
     </style>
@@ -68,12 +81,18 @@
         <a href="contact.html">Contact</a>
     </nav>
     <main>
-        <img src="images/slide1.png" alt="Man looking out the window">
-        <img src="images/logo.png" alt="ROBE Logo" style="max-height: 100px;">
-        <h1>An Advanced Novel Repositioning System for Bedsore Prevention</h1>
-        <div class="quote">
-            “We have the power to write a beautiful chapter in the lives of our beloved, a chapter filled with love, gratitude, and care.”<br>
-            Join us in restoring independence and dignity to patients worldwide.
+        <div class="header-content">
+            <div class="header-text">
+                <img src="images/logo.png" alt="ROBE Logo" style="max-height: 100px;">
+                <h1>An Advanced Novel Repositioning System for Bedsore Prevention</h1>
+                <div class="quote">
+                    “We have the power to write a beautiful chapter in the lives of our beloved, a chapter filled with love, gratitude, and care.”<br>
+                    Join us in restoring independence and dignity to patients worldwide.
+                </div>
+            </div>
+            <div class="header-image">
+                <img src="images/slide1.png" alt="Man looking out the window">
+            </div>
         </div>
     </main>
 </body>
